@@ -8,7 +8,6 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['name', 'description', 'image', 'price', 'stock', 'available']
-    list_editable = ['price', 'stock', 'available']
 
 
 admin.site.register(Category, CategoryAdmin)
