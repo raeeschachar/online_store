@@ -1,0 +1,12 @@
+{% extends "dashboard/layout.html" %}
+
+{% block content %}
+    <p><img src="{{ product.image.url }}" height="100"></p>
+    <h3>Category: </h3> {{ product.category }}
+    <h3>Name: </h3> {{ product.name }}
+    <h3>Price: </h3> {{ product.price }}
+    <h3>Description: </h3> {{ product.description }}
+    <h3>Quantity: </h3> {{ product.stock }}
+    <h3>Availability: </h3> {{ product.available }}
+
+{% endblock %}
