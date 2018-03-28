@@ -34,12 +34,14 @@ INSTALLED_APPS = [
     'products.apps.MainConfig',
     'dashboard.apps.DashboardConfig',
     'user_sessions.apps.UserSessionsConfig',
+    'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'online_store',
 ]
 
 MIDDLEWARE = [
