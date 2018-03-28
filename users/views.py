@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import View
-from user_sessions.forms import UserRegistrationForm
+from users.forms import UserRegistrationForm
 
 
 class AddUserView(View):
