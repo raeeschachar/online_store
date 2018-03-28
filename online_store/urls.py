@@ -7,6 +7,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^products/', include('products.urls')),
     url(r'^dashboard/', include('dashboard.urls')),
+    url(r'^', include('user_sessions.urls')),
 ]
 
 if settings.DEBUG:
