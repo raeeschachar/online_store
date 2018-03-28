@@ -1,12 +1,11 @@
 {% extends "dashboard/layout.html" %}
 
 {% block content %}
-    <p><img src="{{ product.image.url }}" height="100"></p>
-    <h3>Category: </h3> {{ product.category }}
-    <h3>Name: </h3> {{ product.name }}
-    <h3>Price: </h3> {{ product.price }}
-    <h3>Description: </h3> {{ product.description }}
-    <h3>Quantity: </h3> {{ product.stock }}
-    <h3>Availability: </h3> {{ product.available }}
+    <p><img src="{{ product.image.url }}" height="300"></p>
+    <h5>Category: {{ product.category }} </h5>
+    <h5>Name: {{ product.name }} </h5>
+    <h5>Price: Rs.{{ product.price }} </h5>
+    <h5>Description: {{ product.description }} </h5>
+    <h5>Availability: {{ product.available }} </h5>
 
 {% endblock %}

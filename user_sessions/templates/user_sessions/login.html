@@ -1,0 +1,7 @@
+{% extends "dashboard/layout.html" %}
+
+{% block content %}
+    <h3>User Login</h3>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    {% include "dashboard/form.html" with form=form %}
+{% endblock %}

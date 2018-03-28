@@ -6,7 +6,10 @@
     <br>
 
     {% for product in product_list %}
-        <li><a href="{% url 'products:product_detail' product.id %}">{{ product }}</a></li>
+        <h3><a href="{% url 'products:product_detail' product.id %}">
+            <img src="{{ product.image.url }}" height="100"></a></h3>
+        <h5>{{ product }} - {{ product.price }} </h5>
+        <h5>{{ product.description }}</h5>
     {% endfor %}
 
 {% endblock %}
