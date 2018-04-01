@@ -27,7 +27,7 @@ class LoginView(View):
                 return render(request, self.template_name, {
                     'form': self.form(), 'error_message': 'Invalid Credentials'})
         else:
-            return render(request, self.template_name, {'form': self.form()})
+            return render(request, self.template_name, {'form': form})
 
 
 class LogoutView(View):
