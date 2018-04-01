@@ -12,6 +12,10 @@
 
 <header><H1 align="middle">Raees Store </H1></header>
 
+{% if user.is_authenticated %}
+    <h4 align="right"><a href="{% url 'user_sessions:logout' %}">logout</a></h4>
+{% endif %}
+
 {% block content %}
 {% endblock %}
 

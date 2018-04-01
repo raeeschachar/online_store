@@ -25,13 +25,12 @@ class LoginView(View):
                 return HttpResponseRedirect(reverse('dashboard:dashboard'))
             else:
                 return render(request, self.template_name, {
-                    'form': self.form(), 'error_message': 'Invalid Credentials'})
+                    'form': form, 'error_message': 'Invalid Credentials'})
         else:
             return render(request, self.template_name, {'form': form})
 
 
 class LogoutView(View):
-
     def get(self, request):
         logout(request)
-        return HttpResponseRedirect('online_store:home')
+        return HttpResponseRedirect(reverse('home'))
